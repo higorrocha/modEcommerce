@@ -1,0 +1,11 @@
+<h4>My Cart</h4>
+	<p> You've selected <span><%=current_user.cart_count%></span> Produtos!</p>
+
+	<% @cart_produtos.each do |produto|%>
+      	<%=link_to produto do%>
+        	<p>Voltar para produtos Link Novo</p>>
+      	<%end%>
+
+        <p> <%= produto.nome %> </p>
+      	<h4>$ <%= produto.preco %></h4>
+  	<%end%>

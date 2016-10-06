@@ -10,6 +10,8 @@ class ProdutosController < ApplicationController
   # GET /produtos/1
   # GET /produtos/1.json
   def show
+    @produto = Produto.find(params[:id])
+    @cart_action = @produto.cart_action current_user.try :id
   end
 
   # GET /produtos/new
