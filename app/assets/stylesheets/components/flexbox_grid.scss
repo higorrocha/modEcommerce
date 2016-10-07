@@ -1,0 +1,162 @@
+@import "colors";
+// ############# Container(begin) ###############
+
+.container {
+  padding: 0;
+  margin: 65px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.col_1{
+    padding: 5.5px;
+    width: 2.5%;
+    margin-top: 10px;
+    color: $blackcolor;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1em;
+}
+
+
+.col_2 {
+  padding: 5.5px;
+  width: 5%;
+  margin-top: 10px;
+  color: $blackcolor;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1em;
+}
+
+
+.col_3 {
+  padding: 5.5px;
+  width: 10%;
+  margin-top: 10px;
+  color: $blackcolor;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.col_4 {
+  padding: 5.5px;
+  width: 15%;
+  margin-top: 10px;
+  color: $blackcolor;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.col_5 {
+  padding: 5.5px;
+  width: 25%;
+  margin-top: 10px;
+  color: $blackcolor;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.col_6 {
+  padding: 5.5px;
+  width: 35%;
+  margin-top: 10px;
+  color: $blackcolor;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1em;
+}
+.col_7{
+    padding: 5.5px;
+    width: 45%;
+    margin-top: 10px;
+    color: $blackcolor;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.col_8 {
+    padding: 5.5px;
+    width: 55%;
+    margin-top: 10px;
+    color: $blackcolor;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.col_9{
+    padding: 5.5px;
+    width: 65%;
+    margin-top: 10px;
+    color: $blackcolor;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.col_10{
+    padding: 5.5px;
+    width: 75%;
+    margin-top: 10px;
+    color: $blackcolor;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1em;
+}
+
+
+.col_12{
+    padding: 5.5px;
+    width: 85%;
+    margin-top: 10px;
+    color: $blackcolor;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1em;
+}
+@media screen and (max-width: 768px)  {
+    .col_1,
+    .col_2,
+    .col_3,
+    .col_4,
+    .col_5,
+    .col_6,
+    .col_7,
+    .col_8,
+    .col_9,
+    .col_10,
+    .col_11,
+    .col_12{
+        width: 100%;
+    }
+
+
+
+}
+
+
+// ############# Container(end) ###############

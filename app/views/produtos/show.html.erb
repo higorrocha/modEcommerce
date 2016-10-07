@@ -1,15 +1,19 @@
-<p id="notice"><%= notice %></p>
-      
-<h3><%= @produto.nome %> (<%= @produto.tipo %>)</h3>
-    <%= @produto.descricao %> <br>
-    R$<%= @produto.preco %>
-    <br>
-    <%if signed_in?%>
-        <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@produto), removeUrl: remove_from_cart_path(@produto)} do%>
-        <span><%=@cart_action%></span> Cart
-        <%end%>
-    <%end%>
 
-<br>
-<%= link_to 'Edit', edit_produto_path(@produto) %> |
-<%= link_to 'Back', produtos_path %>
+	<div class="col_12">    
+		<h4><%= @produto.nome %> (<%= @produto.tipo %>)</h4>
+		    <p><%= @produto.descricao %></p> 
+		    <br>
+		    <p>R$<%= @produto.preco %></p>
+		    <br>
+		    <%if signed_in?%>
+		        <%=link_to "", class: "btn btn-large", data: {target: @cart_action, addUrl: add_to_cart_path(@produto), removeUrl: remove_from_cart_path(@produto)} do%>
+		        <span><%=@cart_action%></span> Cart
+		        <%end%>
+		    <%end%>
+		<br>
+		<br>
+		<div class="col_7">
+			<%= link_to 'Edit', edit_produto_path(@produto) %> |
+			<%= link_to 'Back', produtos_path %>
+		</div>
+	</div>
