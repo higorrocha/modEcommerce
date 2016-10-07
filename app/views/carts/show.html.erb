@@ -1,11 +1,15 @@
-<h4>My Cart</h4>
-	<p> You've selected <span><%=current_user.cart_count%></span> Produtos!</p>
+<div class="col_12">  
+	<h4>Meu Carrinho</h4>
+		<h5> Você adicionou <span><%=current_user.cart_count%></span> Produtos!</h5>
+	<div class="col_5">
+		<% @cart_produtos.each do |produto|%>
+			<br>
+			<hr>
+	        <p> <%= produto.nome %> </p>
+	      	<h5>$ <%= produto.preco %></h5>
 
-	<% @cart_produtos.each do |produto|%>
-      	<%=link_to produto do%>
-        	<p>Voltar para produtos Link Novo</p>>
-      	<%end%>
-
-        <p> <%= produto.nome %> </p>
-      	<h4>$ <%= produto.preco %></h4>
-  	<%end%>
+	      	<%=link_to 'Ver produtos', produto, class: "btn btn-medium" %>
+	      	<br>
+	  	<%end%>
+	</div>
+</div>
